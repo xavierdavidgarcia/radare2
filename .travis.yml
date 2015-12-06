@@ -39,6 +39,7 @@ script:
   - export NOOK=1
   - export NOREPORT=1
   - cd radare2-regressions
+  - git checkout tests_parallel
   - VERBOSE=1 make -k all
   - make unit_tests
 
